@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="table-wrapper">
+    <div class="table-title">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>My Contacts</h2>
+            </div>
+            <div class="col-sm-6">
+                <a href="add-contact" class="btn btn-success add-new-contact"><span>Add New Contact</span></a>
+            </div>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            {#<th scope="col">ID</th>#}
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Contact Number</th>
+            <th scope="col">Phone Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for contact in all_contacts %}
+        <tr>
+            {#<th scope="row">{{ contact['id'] }}</th>#}
+            <td>{{ contact['fistname']}}</td>
+            <td>{{ contact['lastname'] }}</td>
+            <td>{{ contact['contactnumber'] }}</td>
+            <td>{{ contact.phonetype }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+
+{% endblock %}
+
