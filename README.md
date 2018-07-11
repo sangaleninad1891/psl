@@ -11,4 +11,6 @@ Installation instructions
 4. in our case you have to be inside /psl on the terminal to execute composer command
 
 
-You can also find details on  
+You can also find details on Git - https://github.com/sangaleninad1891/psl
+
+ 
