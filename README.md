@@ -1,8 +1,8 @@
-psl
+PSL - Phonebook in Symfony
 ===
 
 A Symfony project created on July 11, 2018, 2:14 pm.
-
+This is my First project in Symfony 3
 
 Installation instructions
 1. Copy and extract this zip inside www or htdocs folder in your WAMP/LAMP/MAMP
