@@ -9,6 +9,7 @@ use Doctrine\ORM\EntityManager;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\RadioType;
 use Symfony\Component\Validator\Constraints;
 use AppBundle\Entity\Contact;
@@ -51,7 +52,7 @@ class DefaultController extends Controller
         $form = $this->createFormBuilder($defaultData)
             ->add('firstname', TextType::class, array("label" => "First Name", "attr" => array("class" => 'form-control form-field')))
             ->add('lastname', TextType::class, array("label" => "Last Name", "attr" => array("class" => 'form-control form-field')))
-            ->add('contactnumber', TextType::class, array("label" => "Contact Number", "attr" => array("class" => 'form-control form-field ', "placeholder" =>"XXXXXXXXXX", "maxlength"=>"10")))
+            ->add('contactnumber', IntegerType::class, array("label" => "Contact Number", "attr" => array("class" => 'form-control form-field ', "placeholder" =>"XXXXXXXXXX", "maxlength"=>"10")))
             ->add('phonetype', ChoiceType::class, array("label" => "Phone Type", "choices" => array("Work" => "Work", "Cellular" => "Cellular", "Home" => "Home", "Other" => "Other"),"attr" => array("class" => 'form-field form-field-radio')))
             ->add('save', SubmitType::class, array("label" => "Save Contact", "attr" => array("class" => 'submit-button btn btn-success')))
             ->getForm();

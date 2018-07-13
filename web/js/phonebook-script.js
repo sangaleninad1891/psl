@@ -1,4 +1,4 @@
-$("#form_contactnumber").prop("type", "number");
+$("#form_contactnumber").prop("type", "phone");
 
 // $('#form_contactnumber').mask('(000) 000 0000');
 
