@@ -14,3 +14,4 @@ You might want to create virtual host in httpd.conf and host in your /etc/hosts 
 You can also find details on Git - https://github.com/sangaleninad1891/psl
 Alternative for step 1 is to *Clone* repository.
  
+If you are using MAMP - then use http://localhost:8888/psl/web/app_dev.php/home to open local 
